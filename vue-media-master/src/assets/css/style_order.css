@@ -1,0 +1,48 @@
+/*订阅块的样式*/
+
+.main_order {
+  width: 100%;
+  /*overflow: hidden;*/
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.main_order:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main_order > a > img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  max-width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.main_order_info {
+  float: left;
+  position: absolute;
+  left: 5.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  height:100%;
+  width:calc(100% - 5.5rem);
+}
+
+.main_order_info > p:first-child a {
+  font-size: 1.2rem;
+  color: #2e99e9;
+}
+
+.main_order_info > p:last-child {
+  font-size: 1rem;
+  color: #999999;
+  position: absolute;
+  bottom:0
+}
